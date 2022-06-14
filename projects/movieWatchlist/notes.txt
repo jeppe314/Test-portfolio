@@ -1,0 +1,26 @@
+API key: 16936e64
+
+TODO:
+
+Searchbar:
+- Fit the icon inside the input field CHECK
+- CSS the shit out of it CHECK
+
+Log 1.6.22
+
+-Removed outline from from
+-Added links to header
+-Added the placeholder logo for index.html
+-Changed header items to space-around instead of -between and padding
+
+Needed for movie items:
+- Title
+- Rating
+- Run time
+- Genre
+- Description
+- Image
+
+TODO:
+- Truncated function -> read more button
+- main2.js with named functions instead of everything inside =>

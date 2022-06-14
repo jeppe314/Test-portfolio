@@ -1,0 +1,272 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Dosis", "Lato", "Lucida Grande", "Lucida Sans Unicode", "Tahoma", "sans-serif";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font: "Raleway";
+}
+
+/*NAVBAR START*/
+
+.nav {
+  display: flex;
+  position: fixed;
+  justify-content: end;
+  background: #be3144;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2em;
+  list-style-type: none;
+  font-size: 1.5em;
+}
+
+.nav-list a {
+  display: block;
+  color: white;
+  margin: 0 1em;
+  padding: 1em;
+}
+
+.nav-list a:hover {
+  background: #45567d;
+}
+
+/*NAVBAR END*/
+
+/*WELCOME SECTION START*/
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #3a3d40, #19181a);
+}
+
+.welcome-section h1 {
+  font-size: 3em;
+  color: white;
+}
+
+.welcome-section p {
+  color: #be3144;
+  font-size: 1.5em;
+}
+
+/*WELCOME SECTION END*/
+
+/*WORK SECTION START*/
+
+.work-section {
+  background: #45567d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7em 8em;
+}
+
+.work-section h2 {
+  max-width: 600px;
+  font-size: 2em;
+  color: white;
+  align-self: center;
+  text-align: center;
+  border-bottom: 0.1em solid white;
+  margin-bottom: 2em;
+  padding: 0 1em;
+}
+
+/* .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2em;
+} */
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-grid .project-tile {
+  max-width: 33%;
+  box-shadow: 5px 5px 3px -4px rgba(0, 0, 0, 0.75);
+  background: #303841;
+  border-radius: 0 0 2px 2px;
+}
+
+.project-grid img {
+  position: 100% 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.project-grid p {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.7em;
+}
+
+.project-grid .project-tile p span {
+  color: orange;
+  opacity: 0%;
+  font-weight: bold;
+}
+
+.project-tile:hover .brackets {
+  opacity: 100%;
+  transition: opacity 1.5s;
+}
+
+.show-all {
+  margin-top: 2em;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  border: none;
+  width: fit-content;
+  align-self: center;
+  cursor: pointer;
+  background: #303841;
+}
+
+.show-all a {
+  color: white;
+}
+
+.show-all:hover {
+  background: #be3144;
+  transition: background 0.5s;
+}
+
+.fa-greater-than {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  transition: padding-left 0.5s, padding-right 0.5s;
+}
+
+.show-all:hover .fa-greater-than {
+  padding-left: 0.7em;
+  padding-right: 0.3em;
+  transition: padding-left 0.5s, padding-right 0.5s;
+}
+
+/*WORK SECTION END*/
+
+/*CONTACT SECTION START*/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8em 8em;
+  background: #303841;
+  border-bottom: 5px solid #be3144;
+}
+
+.contact h1 {
+  font-size: 3em;
+  color: white;
+}
+
+.contact-links {
+  cursor: pointer;
+  width: 100%;
+  margin: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact p {
+  color: white;
+}
+
+.contact-links a {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  padding: 1em;
+  text-shadow: 2px 0px 1px #000000;
+  transition: margin-top 0.5s, margin-bottom 0.5s;
+}
+
+.contact-links a:hover {
+  margin-top: 0.5em;
+  margin-bottom: -0.5em;
+  transition: margin-top 0.5s, margin-bottom 0.5s;
+}
+
+.contact-links i {
+  margin-right: 0.5em;
+}
+
+/*CONTACT SECTION END*/
+
+/*FOOTER SECTION START*/
+
+footer {
+  background: #303841;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+footer p {
+  color: white;
+}
+
+/*FOOTER SECTION END*/
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 700px) {
+  .nav {
+    justify-content: center;
+  }
+  .nav-list {
+    margin-right: 0;
+  }
+  .nav-list a {
+    padding: 1em 0;
+  }
+  .work-section {
+    padding: 5em 1em;
+  }
+  .contact {
+    padding: 2em 0;
+  }
+  footer {
+    padding: 1em;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer p {
+    margin: 1em;
+  }
+}
